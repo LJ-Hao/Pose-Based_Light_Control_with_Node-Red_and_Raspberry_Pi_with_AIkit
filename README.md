@@ -43,14 +43,54 @@ git clone https://github.com/LJ-Hao/Pose-Based_Light_Control_with_Node-Red_and_R
 
 Edit the `pose_estimation.py` file and change the `mqtt_server` to your reTerminal DM's IP address. And change the Gstreamer pipeline to your reTerminal DM's IP address. And then run the command below to start the pose estimation.
 
-```
+```shell
 bash run.sh pose_estimation.py
 ```
 ## Run Node-RED flow
 
+**Step 1**: Install Node-RED. You can download Node-RED with just one line of command
 ```
+bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+```
+**Step 2**:Click [here]() to download our project files
+**Step 3**:Import project files. Click `Settings => Import` in the upper right corner, click `select a file to import` in the new pop-up window, select the downloaded json file, and finally click `Import`.
 
+<center><img width={600} src="./resource/import.gif" /></center>
+
+**Step 4**:After importing the project file, the system may prompt that your node-red is missing some controls. You need to download the following controls:
+```shell
+@bartbutenaers/node-red-rtsp-to-mjpeg
+@chirpstack/node-red-contrib-chirpstack
+@flowfuse/node-red-dashboard
+node-bacnet-contrib-extended
+node-red-contrib-buffer-parser
+node-red-contrib-image-output
+node-red-contrib-image-tools
+node-red-contrib-modbus
+node-red-contrib-msg-speed
+node-red-contrib-multipart-stream-encoder
+node-red-contrib-onvif
+node-red-contrib-play-audio
+node-red-dashboard
+node-red-node-base64
+node-red-node-mysql
+node-red-node-pi-gpio
+node-red-node-ping
+node-red-node-serialport
+node-red-node-smooth
+node-red-sensecap-paas
+node-red-node-random
 ```
+Take `node-red-node-random` as an example, click `Settings => Manage Palette` in the upper right corner, select the `Install` column in the new window, enter `node-red-node-random`, and finally click `Install `Button.
+
+<center><img width={600} src="./resource/dowload_patelle.gif" /></center>
+
+**Step 5**:You need to modify the IP address of MQTT and the serial port number of ModbusRTU, and set them to match your device.
+
+<center><img width={600} src="./resource/change_detail.png" /></center>
+
+**Step 6**:Click the deploy button in the upper right corner and the system will run normally.
+<center><img width={600} src="./resource/deploy.png" /></center>
 
 ## Install receiver and run on reTerminal DM
 
