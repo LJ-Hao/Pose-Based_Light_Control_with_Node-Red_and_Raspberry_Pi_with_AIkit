@@ -59,10 +59,10 @@ apt-get install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libgstreame
 ```
 
 2. Clone this repository to your reTerminal DM and run the command below to start the video receiver.
+
 ```
 git clone https://github.com/LJ-Hao/Pose-Based_Light_Control_with_Node-Red_and_Raspberry_Pi_with_AIkit.git && cd Pose-Based_Light_Control_with_Node-Red_and_Raspberry_Pi_with_AIkit
 python3 video_receiver.py
-
 ```
 
 ## Result 
