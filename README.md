@@ -20,7 +20,7 @@ In this project, a USB camera captures your pose, and yolov8n run on [AI kit](ht
 ### [Raspberry Pi AI Kit](https://www.seeedstudio.com/Raspberry-Pi-AI-Kit-p-5900.html)
 <div align='center'><img width={600} src='https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-113060086-raspberry-pi-ai-kit-45font.jpg'></div>
 
-### [reTerminal DM](https://www.seeedstudio.com/reTerminal-DM-LTE-Cat-4-EC25-Bundle.html)(Only need for Raspberry Pi 5)
+### [reTerminal DM](https://www.seeedstudio.com/reTerminal-DM-LTE-Cat-4-EC25-Bundle.html)
 <div align='center'><img width={600} src='https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-sku-e23010420--reterminal-dm-_-lte-cat-4-ec25-bundle.jpg'></div>
 
 ## Install AI kit to reComputer R1000 
