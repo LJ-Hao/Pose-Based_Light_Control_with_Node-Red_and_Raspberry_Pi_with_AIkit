@@ -20,14 +20,12 @@ In this project, a USB camera captures your pose, and yolov8n run on [AI kit](ht
 ### [Raspberry Pi AI Kit](https://www.seeedstudio.com/Raspberry-Pi-AI-Kit-p-5900.html)
 <div align='center'><img width={600} src='https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-113060086-raspberry-pi-ai-kit-45font.jpg'></div>
 
-### [reTerminal DM](https://www.seeedstudio.com/reTerminal-DM-LTE-Cat-4-EC25-Bundle.html)(Only need for Raspberry Pi 5)
+### [reTerminal DM](https://www.seeedstudio.com/reTerminal-DM-LTE-Cat-4-EC25-Bundle.html)
 <div align='center'><img width={600} src='https://media-cdn.seeedstudio.com/media/catalog/product/cache/bb49d3ec4ee05b6f018e93f896b8a25d/1/-/1-sku-e23010420--reterminal-dm-_-lte-cat-4-ec25-bundle.jpg'></div>
 
 ## Install AI kit to reComputer R1000 
 
 Please refer to this [guid](https://wiki.seeedstudio.com/yolov8_pose_estimation_on_recomputer_r1000_with_hailo_8l/)
-
-## Install Node-RED to reComputer R1000 and run
 
 
 ## Install Pose_estimation and run on reComputer R1000
@@ -41,7 +39,7 @@ Please refer to this [guid](https://wiki.seeedstudio.com/yolov8_pose_estimation_
 git clone https://github.com/LJ-Hao/Pose-Based_Light_Control_with_Node-Red_and_Raspberry_Pi_with_AIkit.git && cd Pose-Based_Light_Control_with_Node-Red_and_Raspberry_Pi_with_AIkit
 ```
 
-Edit the `pose_estimation.py` file and change the `mqtt_server` to your reTerminal DM's IP address. And change the Gstreamer pipeline to your reTerminal DM's IP address. And then run the command below to start the pose estimation.
+2. Edit the `pose_estimation.py` file and change the `mqtt_server` to your reTerminal DM's IP address. And change the Gstreamer pipeline to your reTerminal DM's IP address. And then run the command below to start the pose estimation.
 
 ```shell
 bash run.sh pose_estimation.py
@@ -94,13 +92,16 @@ Take `node-red-node-random` as an example, click `Settings => Manage Palette` in
 
 ## Install receiver and run on reTerminal DM
 
-```
-git clone https://github.com/LJ-Hao/Pose-Based_Light_Control_with_Node-Red_and_Raspberry_Pi_with_AIkit.git && cd Pose-Based_Light_Control_with_Node-Red_and_Raspberry_Pi_with_AIkit
+1. Install the gstreamer on reTerminal DM.
 
+```
 apt-get install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libgstreamer-plugins-bad1.0-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-tools gstreamer1.0-x gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-pulseaudio
 ```
 
+2. Clone this repository to your reTerminal DM and run the command below to start the video receiver.
+
 ```
+git clone https://github.com/LJ-Hao/Pose-Based_Light_Control_with_Node-Red_and_Raspberry_Pi_with_AIkit.git && cd Pose-Based_Light_Control_with_Node-Red_and_Raspberry_Pi_with_AIkit
 python3 video_receiver.py
 ```
 
