@@ -50,7 +50,7 @@ bash run.sh pose_estimation.py
 ```
 bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
 ```
-**Step 2**:Click [here]() to download our project files
+**Step 2**:Click [here](https://github.com/LJ-Hao/Pose-Based_Light_Control_with_Node-Red_and_Raspberry_Pi_with_AIkit/blob/main/flows.json) to download our project files
 **Step 3**:Import project files. Click `Settings => Import` in the upper right corner, click `select a file to import` in the new pop-up window, select the downloaded json file, and finally click `Import`.
 
 <center><img width={600} src="./resource/import.gif" /></center>
